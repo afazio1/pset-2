@@ -1,15 +1,13 @@
 
 const readlineSync = require("readline-sync");
 
-const INCHES_TO_MM = 25.4;
-let width_in = Number(readlineSync.question("\nWidth: "));
-let length_in = Number(readlineSync.question("Length: "));
+const INCHES_TO_MILLIMETERS = 25.4;
+let widthInches = Number(readlineSync.question("\nWidth: "));
+let lengthInches = Number(readlineSync.question("Length: "));
 
-let width_mm = width_in * INCHES_TO_MM;
-let length_mm = length_in * INCHES_TO_MM;
-let area = width_mm * length_mm;
-area = area.toFixed(2);
-area = area.toLocaleString();
+let widthMillimeters = widthInches * INCHES_TO_MILLIMETERS;
+let lengthMillimeters = lengthInches * INCHES_TO_MILLIMETERS;
+let areaMillimeters = widthMillimeters * lengthMillimeters;
+areaMillimeters = areaMillimeters.toLocaleString({maximumFractionDigits: 2, minimumFractionDigits: 2});
 
-console.log("\nA(n) " + width_in + "-by-" + length_in + "-inch sheet of paper has an area of " + area + " square millimeter(s).\n" );
-
+console.log("\nA(n) " + widthInches + "-by-" + lengthInches + "-inch sheet of paper has an area of " + areaMillimeters + " square millimeter(s).\n" );
