@@ -22,6 +22,6 @@ let sundayEarnings = sundayHours * HOURLY_WAGE;
 
 //the total money the user earns, which is the sum of their daily earnings
 let totalWeekSalary = mondayEarnings + tuesdayEarnings + wednesdayEarnings + thursdayEarnings + fridayEarnings + saturdayEarnings + sundayEarnings;
-totalWeekSalary = totalWeekSalary.toLocaleString({maxiumFractionDigits: 2, minimumFractionDigits: 2});
+totalWeekSalary = totalWeekSalary.toLocaleString("en", { style: "currency", currency: "USD" });
 
-console.log("\nYou'll make " + "$" + totalWeekSalary + " this week.");
+console.log("\nYou'll make " + totalWeekSalary + " this week.");

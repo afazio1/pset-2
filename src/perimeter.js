@@ -9,6 +9,6 @@ let width_cm = width_in * INCHES_TO_CM;
 let length_cm = length_in * INCHES_TO_CM;
 let perimeter = (2 * length_cm) + (2 * width_cm);
 
-perimeter = perimeter.toLocaleString({maxiumFractionDigits: 2, minimumFractionDigits: 2});
+perimeter = perimeter.toLocaleString("en", {maxiumFractionDigits: 2, minimumFractionDigits: 2});
 
 console.log("\nA(n) " + width_in + "-by-" + length_in + "-inch sheet of paper has perimeter of " + perimeter + " centimeter(s).\n" );

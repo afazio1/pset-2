@@ -9,3 +9,5 @@ let totalBuses = Math.ceil(totalPeople / BUS_CAPACITY);
 let peopleOnLastBus = totalPeople % BUS_CAPACITY;
 
 console.log("\n" + totalBuses + " bus(es) is (are) needed, with " + peopleOnLastBus + " passenger(s) on the last bus.\n");
+
+//what if even number of people fit in the bus
