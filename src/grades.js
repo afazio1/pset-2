@@ -30,4 +30,4 @@ const finalTestGrade = ((testGradeOne + testGradeTwo + testGradeThree) / NUMBER_
 let markingPeriodGrade = (finalHwGrade + finalQuizGrade + finalTestGrade);
 markingPeriodGrade = markingPeriodGrade.toFixed(2);
 
-console.log("\nYour marking period grade is " + markingPeriodGrade + "%.\n")
+console.log(`\nYour marking period grade is ${markingPeriodGrade}%.\n`)

@@ -9,5 +9,5 @@ const totalPeople = numberOfStudents + numberOfTeachers;
 const totalBuses = Math.ceil(totalPeople / busCapacity);
 const peopleOnLastBus = totalPeople % busCapacity;
 
-console.log("\n" + totalBuses + " bus(es) is (are) needed, with " + peopleOnLastBus + " passenger(s) on the last bus.\n");
+console.log(`\n${totalBuses} bus(es) is (are) needed, with ${peopleOnLastBus} passenger(s) on the last bus.\n`);
 

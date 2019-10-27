@@ -14,4 +14,4 @@ const lengthCentimeters = lengthInches * INCHES_TO_CENTIMETERS;
 let perimeter = (2 * lengthCentimeters) + (2 * widthCentimeters);
 perimeter = perimeter.toLocaleString("en", {maxiumFractionDigits: 2, minimumFractionDigits: 2});
 
-console.log("\nA(n) " + widthInches + "-by-" + lengthInches + "-inch sheet of paper has a perimeter of " + perimeter + " centimeter(s).\n" );
+console.log(`\nA(n) ${widthInches}-by-${lengthInches}-inch sheet of paper has a perimeter of ${perimeter} centimeter(s).\n`);

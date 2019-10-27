@@ -21,4 +21,4 @@ const totalDeductionPercentage = FEDERAL_INCOME_TAX + STATE_INCOME_TAX + SOCIAL_
 let takeHomePay = (preTaxSalary - (preTaxSalary * totalDeductionPercentage)) / PAY_PERIODS_PER_YEAR;
 takeHomePay = takeHomePay.toLocaleString("en", { style: "currency", currency: "USD" });
 
-console.log("\nYour take-home pay each check will be " + takeHomePay + ".\n");
+console.log(`\nYour take-home pay each check will be ${takeHomePay}.\n`);

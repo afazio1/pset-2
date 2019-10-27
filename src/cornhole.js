@@ -11,4 +11,4 @@ const holeArea = Math.PI * (radius ** 2);
 //Calculations for cornhole board surface area
 let cornholeSurfaceArea = boardArea - holeArea;
 cornholeSurfaceArea = cornholeSurfaceArea.toLocaleString("en", {maximumFractionDigits: 2, minimumFractionDigits: 2});
-console.log("\nThe surface area of a standard Cornhole board is " + cornholeSurfaceArea + " square inch(es).\n");
+console.log(`\nThe surface area of a standard Cornhole board is ${cornholeSurfaceArea} square inch(es).\n`);

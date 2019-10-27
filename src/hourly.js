@@ -24,4 +24,4 @@ const sundayEarnings = sundayHours * hourlyWage;
 let totalWeekSalary = mondayEarnings + tuesdayEarnings + wednesdayEarnings + thursdayEarnings + fridayEarnings + saturdayEarnings + sundayEarnings;
 totalWeekSalary = totalWeekSalary.toLocaleString("en", { style: "currency", currency: "USD" });
 
-console.log("\nYou'll make " + totalWeekSalary + " this week.\n");
+console.log(`\nYou'll make ${totalWeekSalary} this week.\n`);
