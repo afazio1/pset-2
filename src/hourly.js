@@ -1,27 +1,27 @@
 const readlineSync = require("readline-sync");
 
-const HOURLY_WAGE = Number(readlineSync.question("\nHourly wage: "));
+const hourlyWage = Number(readlineSync.question("\nHourly wage: "));
 
-//user's work hours for each day of the week
-let mondayHours = Number(readlineSync.question("\nMonday: "));
-let tuesdayHours = Number(readlineSync.question("Tuesday: "));
-let wednesdayHours = Number(readlineSync.question("Wednesday: "));
-let thursdayHours = Number(readlineSync.question("Thursday: "));
-let fridayHours = Number(readlineSync.question("Friday: "));
-let saturdayHours = Number(readlineSync.question("Saturday: "));
-let sundayHours = Number(readlineSync.question("Sunday: "));
+//User's work hours for each day of the week
+const mondayHours = Number(readlineSync.question("\nMonday: "));
+const tuesdayHours = Number(readlineSync.question("Tuesday: "));
+const wednesdayHours = Number(readlineSync.question("Wednesday: "));
+const thursdayHours = Number(readlineSync.question("Thursday: "));
+const fridayHours = Number(readlineSync.question("Friday: "));
+const saturdayHours = Number(readlineSync.question("Saturday: "));
+const sundayHours = Number(readlineSync.question("Sunday: "));
 
-//the money the user makes each day based on their hours and hourly wage
-let mondayEarnings = mondayHours * HOURLY_WAGE;
-let tuesdayEarnings = tuesdayHours * HOURLY_WAGE;
-let wednesdayEarnings = wednesdayHours * HOURLY_WAGE;
-let thursdauEarnings = thursdayHours * HOURLY_WAGE;
-let fridayEarnings = fridayHours * HOURLY_WAGE;
-let saturdayEarnings = saturdayHours * HOURLY_WAGE;
-let sundayEarnings = sundayHours * HOURLY_WAGE;
+//The money the user makes each day based on their hours and hourly wage
+const mondayEarnings = mondayHours * hourlyWage;
+const tuesdayEarnings = tuesdayHours * hourlyWage;
+const wednesdayEarnings = wednesdayHours * hourlyWage;
+const thursdayEarnings = thursdayHours * hourlyWage;
+const fridayEarnings = fridayHours * hourlyWage;
+const saturdayEarnings = saturdayHours * hourlyWage;
+const sundayEarnings = sundayHours * hourlyWage;
 
-//the total money the user earns, which is the sum of their daily earnings
+//The total money the user earns, which is the sum of their daily earnings
 let totalWeekSalary = mondayEarnings + tuesdayEarnings + wednesdayEarnings + thursdayEarnings + fridayEarnings + saturdayEarnings + sundayEarnings;
 totalWeekSalary = totalWeekSalary.toLocaleString("en", { style: "currency", currency: "USD" });
 
-console.log("\nYou'll make " + totalWeekSalary + " this week.");
+console.log("\nYou'll make " + totalWeekSalary + " this week.\n");

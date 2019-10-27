@@ -1,10 +1,11 @@
 const readlineSync = require("readline-sync");
 
-let width_in = Number(readlineSync.question("\nWidth: "));
-let length_in = Number(readlineSync.question("Length: "));
+//User inputs length and width
+const width = Number(readlineSync.question("\nWidth: "));
+const length = Number(readlineSync.question("Length: "));
 
-let diagonal = Math.hypot(width_in, length_in);
-diagonal = diagonal.toLocaleString("en", {maxiumFractionDigits: 2, minimumFractionDigits: 2});
+//Calculates the hypotenuse which is the diagonal
+let diagonal = Math.hypot(width, length);
+diagonal = diagonal.toLocaleString("en", {maximumFractionDigits: 2, minimumFractionDigits: 2});
 
-
-console.log("\nA(n) " + width_in + "-by-" + length_in + "-inch sheet of paper has diagonal of " + diagonal + " inch(es).\n" );
+console.log("\nA(n) " + width + "-by-" + length + "-inch sheet of paper has a diagonal of " + diagonal + " inch(es).\n" );
